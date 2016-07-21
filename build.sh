@@ -1,3 +1,5 @@
 #!/bin/bash
 
-docker build --tag "alpine-influxdb-relay:1.0"  --no-cache=true .
+source _VERSION
+_version=$_VERSION
+docker build --tag "alpine-influxdb-relay:${_version}"  --no-cache=true .
